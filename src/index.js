@@ -19,6 +19,10 @@ function parseRequest(req) {
   }
 }
 
+app.get('/_ah/start', (req, res) => {
+  res.sendStatus(200);
+});
+
 app.all('*', (req, res) => {
   log('Request received', parseRequest(req));  
   res.status(503).send('Service Unavailable');
