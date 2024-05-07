@@ -1,0 +1,17 @@
+{
+  "name": "maintenance-service",
+  "version": "1.0.0",
+  "description": "Response 503 for all requests",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Shinsuke Marty Yamada",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
